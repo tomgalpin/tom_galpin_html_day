@@ -1,0 +1,51 @@
+<!-- Exercise 1 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cool Page</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <h1>Famous Cartoon Dogs</h1>
+
+    <ul id="puppies">
+      <li class"great_dane" id="scooby_doo"><img src="images/scooby_doo.jpg" alt="scooby_doo">Scooby Doo</li>
+      <li class"cairn_terrier" id="toto"><img src="images/toto.jpg" alt="toto">Toto</li>
+      <li class"lab" id="old_yeller"><img src="images/old_yeller.jpg" alt="old_yeller">Old Yeller</li>
+      <li class"cocker_spaniel" id="lady"><img src="images/lady.jpg" alt="lady">Lady</li>
+      <li class"chihuahua" id="ren"><img src="images/ren.jpg" alt="ren">Ren</li>
+      <li class"collie" id="lassie"><img src="images/lassie.jpg" alt="lassie">Lassie</li>
+      <li class"great_dane" id="marmaduke"><img src="images/marmaduke.jpg" alt="marmaduke">Marmaduke</li>
+      <li class"beagle" id="snoopy"><img src="images/snoopy.jpg" alt="snoopy">Snoopy</li>
+    </ul>
+
+    <form id="new_puppy" action="/puppies" method="post">
+      <fieldset>
+        <legend>Add a dog</legend>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name">
+          <label for"breed">Breed</label>
+          <select id="breed" name="breed">
+            <option value="">Choose a breed</option>
+            <option value="great_dane">Great Dane</option>
+            <option value="cairn_terrier">Cairn Terrier</option>
+            <option value="lab">Lab</option>
+            <option value="cocker_spaniel">Cocker Spaniel</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="collie">Collie</option>
+            <option value="beagle">Beagle</option>
+          </select>
+        <input type="submit" name="submit" value="Add dog!">
+    </fieldset>
+
+    </form>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
+
+
